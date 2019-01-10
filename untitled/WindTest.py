@@ -11,7 +11,7 @@ def getSecsSerial(strSecCodes,items,begT,endT):
     MarketData = w.wsd(strSecCodes, items, begT, endT, "")
     return MarketData;
     pass
-
+#check out the file
 def getSecsDaysSerial(strSecCodes,items,endT,Cycs):
     dbegT = ref(endT, -1*Cycs)
     begT = dbegT.strftime("%Y-%m-%d")
